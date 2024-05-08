@@ -8,14 +8,14 @@
 
 }
 body {
-    background: #e3f2fd;
+    background: #e8e5da;
 }
 h1 {
     color: #fff;
     padding: 18px 0;
     text-align: center;
     font-size: 1.75rem;
-    background: #5327f0;
+    background: #304c89;
 }
 .wrapper {
     display: flex;
@@ -50,7 +50,7 @@ h1 {
     font-size: 1.18rem;
     padding: 0 15px;
     margin-top: -4px;
-    background: #e3f2fd;
+    background: #e8e5da;
 }
 .weather-input button {
     width: 100%;
@@ -64,7 +64,7 @@ h1 {
     cursor: pointer;
 }
 .weather-input .location-btn {
-    background: #6c757d;
+    background: #cdc392;
 }
 .weather-data { 
     width: 100%;
@@ -74,7 +74,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     padding: 20px 70px 20px 20px;
-    background: #5372f0;
+    background: #648de5;
 }
 .current-weather h2 {
     font-size: 1.7rem;
@@ -92,7 +92,6 @@ h1 {
     margin-top: -15px;
 }
 .current-weather .icon h4 {
-    /* margin-top: -10px; */
     text-transform: capitalize;
 }
 .days-forecast h2 {
@@ -108,7 +107,7 @@ h1 {
     color: #fff;
     padding: 18px 16px;
     border-radius: 5px;
-    background: #6c757d;
+    background: #cdc392;
     width: calc(100% / 5);
 }
 .weather-cards .card img {
