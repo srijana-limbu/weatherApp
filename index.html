@@ -123,7 +123,7 @@
       };
 
       const getWeatherDetails = (cityName, lat, lon) => {
-        const weatherAppUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&&appid=${API_KEY}`;
+        const weatherAppUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&&appid=${API_KEY}`;
         fetch(weatherAppUrl)
           .then((res) => res.json())
           .then((data) => {
@@ -170,7 +170,7 @@
 
         // console.log(cityName);
         //get entered city coordinates(latitude,longitude and name)
-        const GEOCODING_API_URL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
+        const GEOCODING_API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
 
         fetch(GEOCODING_API_URL)
           .then((res) => res.json())
@@ -191,7 +191,7 @@
           (position) => {
             // console.log(position);
             const { latitude, longitude } = position.coords;
-            const reverseGeocodingUrl = `http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${API_KEY}`;
+            const reverseGeocodingUrl = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=1&appid=${API_KEY}`;
 
             //get city name from coordinates using reverse geocoding api
             fetch(reverseGeocodingUrl)
