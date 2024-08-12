@@ -8,7 +8,7 @@ API_KEY = "268a32275866cf7188122568282b6d06";
 
 const createWeatherCard = (cityName, weatherItem, index) => {
     //html for five day forecast card
-    if (index === 0) {
+    if (index === 0) {-
         return  `<div class="details">
                 <h2>${cityName} (${weatherItem.dt_txt.split(" ")[0]})</h2>
                 <h4>Temperature: ${(weatherItem.main.temp - 273.15).toFixed(2)}°C</h4>
